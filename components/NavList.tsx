@@ -4,8 +4,9 @@ import Link from "next/link";
 import { ChevronDownIcon } from "@heroicons/react/24/outline";
 import { useState } from "react";
 import { motion } from "framer-motion";
+import { NavItem } from "@/interfaces/nav.interface";
 
-export default function NavList({ navItem, setBody, body }: { navItem: any, setBody: any, body: any }) {
+export default function NavList({ navItem }: { navItem: NavItem }) {
   const [isHovered, setHovered] = useState(false);
 
   const shrink = {
@@ -18,8 +19,8 @@ export default function NavList({ navItem, setBody, body }: { navItem: any, setB
   const expand = {
     scale: 1,
     transition: {
-      type: "spring",
-      duration: 0.1,
+      type: "",
+      duration: 0.05,
       delayChildren: 0.2,
       staggerChildren: 0.05,
     },
@@ -81,36 +82,6 @@ export default function NavList({ navItem, setBody, body }: { navItem: any, setB
                     >
                       {listItem.name}
                     </label>
-                  )}
-                  {navItem.checkbox && (
-                    <input
-                      className="cursor-pointer"
-                      id={`${listItem.name}`}
-                      type="checkbox"
-                      checked={body[navItem.filterName].includes(
-                        index + navItem.startAt
-                      )}
-                      onChange={(e) => {
-                        if (e.target.checked) {
-                          setBody({
-                            ...body,
-                            [navItem.filterName]: [
-                              ...body[navItem.filterName],
-                              index + navItem.startAt,
-                            ],
-                          });
-                        } else {
-                          setBody({
-                            ...body,
-                            [navItem.filterName]: body[
-                              navItem.filterName
-                            ].filter(
-                              (item: number) => item !== index + navItem.startAt
-                            ),
-                          });
-                        }
-                      }}
-                    />
                   )}
                 </li>
               )
