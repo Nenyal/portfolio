@@ -35,7 +35,7 @@ export default function Header() {
               <Image src={logo} className="w-8 " alt="logo" priority />
             </Link>
 
-            <div className={`hidden gap-6 lg:flex text-black`}>
+            <div className={`gap-6 lg:flex text-black`}>
               {navItems.map((navItem, index) => (
                 <NavList navItem={navItem} key={index} />
               ))}
