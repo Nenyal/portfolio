@@ -12,6 +12,12 @@ const config: Config = {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+        "hero-pattern": "url('/assets/background.svg')",
+      },
+      spacing: {
+        '1/5': '20%',
+        '1/4': '25%',
+        '1/3': '33.333333%',
       },
     },
   },

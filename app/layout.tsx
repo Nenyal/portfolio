@@ -19,13 +19,14 @@ export default function RootLayout({
     <html lang="en" className="h-full" style={{ scrollBehavior: "smooth" }}>
       <body className={`${inter.style.fontFamily} h-full`}>
         <Header />
-        <div className="flex flex-col items-center w-full mt-32"> {/* mt-32 is the margin-top */}
-          <div className="flex flex-col w-full gap-8 px-6 max-w-7xl"> {/* px-6 is the padding */}
-            <div className="flex flex-col justify-between min-h-screen bg-white"> {/* bg-white is the background color */}
-              <div className="min-h-full">{children}</div>
+        <div className="min-h-full">{children}</div>
+        {/* <div className="flex flex-col items-center w-full mt-32"> mt-32 is the margin-top
+          <div className="flex flex-col w-full gap-8 px-6 max-w-7xl"> px-6 is the padding
+            <div className="flex flex-col justify-between min-h-screen bg-white"> bg-white is the background color
+              
             </div>
           </div>
-        </div>
+        </div> */}
       </body>
     </html>
   );

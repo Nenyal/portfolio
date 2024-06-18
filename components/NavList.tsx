@@ -4,7 +4,7 @@ import Link from "next/link";
 import { ChevronDownIcon } from "@heroicons/react/24/outline";
 import { useState } from "react";
 import { motion } from "framer-motion";
-import { NavItem } from "@/interfaces/nav.interface";
+import { NavItem, NavListItem } from "@/interfaces/nav.interface";
 
 export default function NavList({ navItem }: { navItem: NavItem }) {
   const [isHovered, setHovered] = useState(false);
@@ -65,7 +65,7 @@ export default function NavList({ navItem }: { navItem: NavItem }) {
           className="absolute z-20 flex flex-col min-w-full gap-2 p-2 overflow-auto overflow-x-hidden transition-all duration-500 ease-out bg-white shadow-md opacity-100 max-h-48 "
         >
           {navItem?.list?.map(
-            (listItem: any, index: number) =>
+            (listItem: NavListItem, index: number) =>
               listItem?.show && (
                 <li
                   key={index}
