@@ -1,26 +1,37 @@
 import bg from "@/assets/background.png";
+import { Button } from "@tremor/react";
+import Link from "next/link";
 
 export default function Home() {
   return (
     <>
       <main>
         <section
-          className="bg-cover bg-center p-8"
+          className="bg-cover bg-center bg-gradient-to-t from-black to-white"
           style={{ backgroundImage: `url(${bg.src})` }}
         >
-          <div className="flex flex-col justify-center h-screen gap-4 ml-1/4">
-            <h2 className="text-3xl font-semibold">Hello, I&apos;m</h2>
-            <h1 className="text-5xl font-bold">Selim Göktuğ Cankurtaran</h1>
-            <h2 className="text-3xl font-semibold text-cyan-600">
+          <div className="flex flex-col tablet:flex-row justify-center h-screen gap-2 lg:gap-4 w-full p-1/6 pt-36 lg:p-1/6 bg-gradient-to-t from-cyan-bg to-transparent">
+            <h2 className="text-xl lg:text-3xl font-semibold ">
+              Hello, I&apos;m
+            </h2>
+            <h1 className="text-3xl lg:text-5xl font-bold">
+              Selim Göktuğ Cankurtaran
+            </h1>
+            <h2 className="text-l lg:text-3xl font-semibold max text-cyan-600">
               a Software Engineer <br></br> of another kind
             </h2>
-            <p className="mt-4 max-w-1/3">
+            <p className="mt-4 lg:max-w-1/3 text-sm">
               {" "}
               I&apos;m a software engineer with a passion for building scalable
               and maintainable software. I have experience in building web
               applications, APIs, and microservices. I&apos;m also interested in
               cloud computing and DevOps practices.
             </p>
+            <Link href="/contact" className="w-36 h-11 rounded-full">
+              <Button className="w-36 h-11 text-white bg-blue-700 hover:bg-blue-800 focus:outline-none focus:ring-4 focus:ring-blue-300 font-medium rounded-full text-sm px-5 py-2.5 text-center me-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                hire me!
+              </Button>
+            </Link>
           </div>
         </section>
 

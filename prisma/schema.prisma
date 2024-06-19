@@ -7,6 +7,11 @@ datasource db {
   url      = env("DATABASE_URL")
 }
 
-model Portfolio {
+model Header {
   id String @id @default(auto()) @map("_id") @db.ObjectId
+  title String
+  description String
+  image String
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
 }
