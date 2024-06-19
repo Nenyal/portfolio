@@ -25,6 +25,9 @@ const config: Config = {
         cyan: {
           bg: "#EAF4FB",
         },
+        darkblue: {
+          buttonbg: "#053C5F",
+        },
       },
     },
   },

@@ -7,7 +7,7 @@ export default function Home() {
     <>
       <main>
         <section
-          className="bg-cover bg-center bg-gradient-to-t from-black to-white"
+          className="bg-cover bg-center"
           style={{ backgroundImage: `url(${bg.src})` }}
         >
           <div className="flex flex-col tablet:flex-row justify-center h-screen gap-2 lg:gap-4 w-full p-1/6 pt-36 lg:p-1/6 bg-gradient-to-t from-cyan-bg to-transparent">
@@ -27,11 +27,19 @@ export default function Home() {
               applications, APIs, and microservices. I&apos;m also interested in
               cloud computing and DevOps practices.
             </p>
-            <Link href="/contact" className="w-36 h-11 rounded-full">
-              <Button className="w-36 h-11 text-white bg-blue-700 hover:bg-blue-800 focus:outline-none focus:ring-4 focus:ring-blue-300 font-medium rounded-full text-sm px-5 py-2.5 text-center me-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
-                hire me!
-              </Button>
-            </Link>
+            <div className="flex flex-row items-center justify-center w-72 gap-4 mt-8">
+              <Link href="/contact" className="w-36 h-11 rounded-full">
+                <Button className="w-32 h-11 text-white bg-darkblue-buttonbg hover:bg-[#032840] focus:outline-none focus:ring-2 focus:ring-blue-200 font-bold rounded-full text-base px-5 py-2.5 text-center me-2 mb-2">
+                  hire me!
+                </Button>
+              </Link>
+
+              <Link href="/contact" className="w-36 h-11 rounded-full">
+                <Button className="w-36 h-11 text-[#053C5F] bg-white ring-2 ring-[#053C5F] hover:bg-cyan-bg focus:outline-none focus:ring-4 focus:ring-blue-300 font-bold rounded-full text-base px-5 py-2.5 text-center me-2 mb-2">
+                  Learn more
+                </Button>
+              </Link>
+            </div>
           </div>
         </section>
 
