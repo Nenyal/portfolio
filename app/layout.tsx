@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { Sen } from "next/font/google";
 import "./globals.css";
-import Header from "../components/Header";
+import Header from "@/components/Header";
 
 const sen = Sen({ subsets: ["latin"], weight: "400" });
 

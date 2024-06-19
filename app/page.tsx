@@ -100,7 +100,7 @@ export default function Home() {
       </main>
       <footer className="text-center mt-12 bg-cover bg-center p-4">
         <p className="text-white">
-          &copy; 2024 SELIM CANKURTARAN. All rights reserved.
+          &copy; 2024 SELIM GOKTUG CANKURTARAN. All rights reserved.
         </p>
       </footer>
     </>
