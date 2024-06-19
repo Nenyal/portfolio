@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Sen } from "next/font/google";
+import { Inter, Sen } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/Header";
 
@@ -18,7 +18,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="h-full" style={{ scrollBehavior: "smooth" }}>
-      <body className={`${sen.style.fontFamily} h-full`}>
+      <body className={`${sen.className} h-full`}>
         <Header />
         <div className="min-h-full">{children}</div>
       </body>
