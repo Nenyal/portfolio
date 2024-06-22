@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import logo from "@/assets/logo1.svg";
+import logo from "@/assets/logo.svg";
 import NavList from "./NavList";
 import { NavItem } from "@/interfaces/nav.interface";
 import { useEffect, useState } from "react";

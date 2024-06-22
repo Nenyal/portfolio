@@ -1,5 +1,11 @@
-import bg from "@/assets/background.png";
+import bg from "@/assets/background1.png";
+import js from "@/assets/javascript.svg";
+import csharp from "@/assets/csharp.svg";
+import python from "@/assets/python.svg";
+import java from "@/assets/java.svg";
+import typescript from "@/assets/typescript.svg";
 import { Button } from "@tremor/react";
+import Image from "next/image";
 import Link from "next/link";
 
 export default function Home() {
@@ -10,7 +16,9 @@ export default function Home() {
           className="bg-cover bg-center"
           style={{ backgroundImage: `url(${bg.src})` }}
         >
-          <div className="flex flex-col tablet:flex-row justify-center h-screen gap-2 lg:gap-4 w-full p-1/6 pt-36 lg:p-1/6 bg-gradient-to-t from-cyan-bg to-transparent">
+          <div className="flex flex-col tablet:flex-row justify-center h-screen gap-2 lg:gap-4 w-full p-1/6 pt-36 lg:p-1/4">
+            {" "}
+            {/*bg-gradient-to-t from-cyan-bg to-transparent*/}
             <h2 className="text-xl lg:text-3xl font-semibold ">
               Hello, I&apos;m
             </h2>
@@ -20,7 +28,7 @@ export default function Home() {
             <h2 className="text-l lg:text-3xl font-semibold max text-cyan-600">
               a Software Engineer <br></br> of another kind
             </h2>
-            <p className="mt-4 lg:max-w-1/3 text-sm">
+            <p className="mt-4 lg:max-w-1/2 text-sm">
               {" "}
               I&apos;m a software engineer with a passion for building scalable
               and maintainable software. I have experience in building web
@@ -43,12 +51,58 @@ export default function Home() {
           </div>
         </section>
 
-        <section className="flex flex-col items-center w-full gap-8 p-8 shadow-md rounded-lg">
+        <section className="flex flex-col px-1/4 items-center w-full gap-8 p-8 shadow-md rounded-lg">
           <h2 className="text-2xl font-semibold">Experience</h2>
-          <p className="mt-4">
-            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
-            nonumy eirmod tempo.
-          </p>
+          <div className="grid lg:grid-cols-3 grid-cols-1 gap-[34px] items-center hover">
+            <div className="flex flex-col items-center text-center gap-2 px-4 py-6 border-2 rounded-lg border-gray-50 transform transition duration-300 hover:scale-105">
+              <Image src={js.src} alt="Javascript" width={50} height={50} />
+              <h2 className="text-xl font-bold text-[#3C3C3C]">JavaScript</h2>
+              <p>
+                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
+                diam nonumy eirmod tempo.
+              </p>
+            </div>
+            <div className="flex flex-col items-center text-center gap-2 px-4 py-6 border-2 rounded-lg border-gray-50 transform transition duration-300 hover:scale-105">
+              <Image src={csharp.src} alt="CSharp" width={50} height={50} />
+              <h2 className="text-xl font-bold text-[#3C3C3C]">C#</h2>
+              <p>
+                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
+                diam nonumy eirmod tempo.
+              </p>
+            </div>
+
+            <div className="flex flex-col items-center text-center gap-2 px-4 py-6 border-2 rounded-lg border-gray-50 transform transition duration-300 hover:scale-105">
+              <Image src={python.src} alt="Python" width={50} height={50} />
+              <h2 className="text-xl font-bold text-[#3C3C3C]">Python</h2>
+              <p>
+                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
+                diam nonumy eirmod tempo.
+              </p>
+            </div>
+
+            <div className="flex flex-col items-center text-center gap-2 px-4 py-6 border-2 rounded-lg border-gray-50 transform transition duration-300 hover:scale-105">
+              <Image src={java.src} alt="Java" width={50} height={50} />
+              <h2 className="text-xl font-bold text-[#3C3C3C]">Java</h2>
+              <p>
+                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
+                diam nonumy eirmod tempo.
+              </p>
+            </div>
+
+            <div className="flex flex-col items-center text-center gap-2 px-4 py-6 border-2 rounded-lg border-gray-50 transform transition duration-300 hover:scale-105">
+              <Image
+                src={typescript.src}
+                alt="TypeScript"
+                width={50}
+                height={50}
+              />
+              <h2 className="text-xl font-bold text-[#3C3C3C]">TypeScript</h2>
+              <p>
+                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
+                diam nonumy eirmod tempo.
+              </p>
+            </div>
+          </div>
         </section>
 
         <section className="flex flex-col items-center w-full gap-8 p-8 shadow-md rounded-lg">
