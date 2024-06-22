@@ -4,6 +4,7 @@ import type { NavItem } from "@/interfaces/nav.interface";
 export async function GET(req: NextRequest, res: NextResponse) {
   const navItems: NavItem[] = [
     {
+      id: 1,
       title: { name: "About", link: "/about" },
       // list: [
       //   { show: true, name: "About Me", link: "/about" },
@@ -12,12 +13,15 @@ export async function GET(req: NextRequest, res: NextResponse) {
       // ],
     },
     {
+      id: 2,
       title: { name: "Projects", link: "/projects" },
     },
     {
+      id: 3,
       title: { name: "Contact", link: "/contact" },
     },
     {
+      id: 4,
       title: { name: "Curriculum Vitae", link: "/cv" },
     },
   ];

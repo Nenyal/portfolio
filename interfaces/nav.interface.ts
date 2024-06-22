@@ -1,4 +1,5 @@
 export interface NavItem {
+  id: number;
   title: {
     name: string;
     link: string;

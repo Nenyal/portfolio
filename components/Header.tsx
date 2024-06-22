@@ -30,18 +30,16 @@ export default function Header() {
             <Image src={logo} className="w-72" alt="logo" priority />
           </Link>
 
-          <div
-            className="lg:hidden absolute z-50 top-0 right-0 mr-5 mt-7 text-black cursor-pointer"
-            onClick={() => {
-              setMobile(!mobile);
-            }}
-          >
+          <div className="lg:hidden absolute z-50 top-0 right-0 mr-5 mt-7 text-black cursor-pointer">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               className="h-6 w-6"
               fill="none"
               viewBox="0 0 24 24"
               stroke="currentColor"
+              onClick={() => {
+                setMobile(!mobile);
+              }}
             >
               {mobile ? (
                 <path
@@ -64,15 +62,15 @@ export default function Header() {
             <div
               className={`lg:hidden absolute z-50 top-[80px] bg-white border left-0 w-full`}
             >
-              {navItems.map((navItem, index) => (
-                <NavList navItem={navItem} key={index} />
+              {navItems.map((navItem) => (
+                <NavList navItem={navItem} key={navItem.id} />
               ))}
             </div>
           )}
 
           <div className={`gap-6 lg:flex hidden text-black mr-5 lg:mr-1/6`}>
-            {navItems.map((navItem, index) => (
-              <NavList navItem={navItem} key={index} />
+            {navItems.map((navItem) => (
+              <NavList navItem={navItem} key={navItem.id} />
             ))}
           </div>
         </div>
