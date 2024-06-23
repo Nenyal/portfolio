@@ -106,55 +106,40 @@ export default function Home() {
         </section>
 
         <section className="flex flex-col items-center w-full gap-8 p-8 shadow-md rounded-lg">
-          <h2 className="text-2xl font-semibold">Education</h2>
+          <h2 className="text-2xl font-semibold">Projects</h2>
           <p className="mt-4">
             Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
             nonumy eirmod tempo.
           </p>
         </section>
 
-        <section className="z-30 flex flex-col items-center w-full rounded-lg gap-32">
-          <div className="flex flex-col flex-wrap items-center justify-between w-full gap-8 px-6 tablet:flex-row max-w-7xl">
-            <h2 className="text-2xl font-semibold">Specialities</h2>
-            <p className="mt-4">
-              Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
-              nonumy eirmod tempo.
-            </p>
-          </div>
-        </section>
-
-        <section className="mb-12 p-8 shadow-md rounded-lg">
+        <section className="flex flex-col justify-center items-center gap-2 lg:gap-4 w-full px-1/6 p-8 lg:px-1/4 shadow-md rounded-lg">
           <h2 className="text-2xl font-semibold">About</h2>
           <p className="mt-4">
-            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
-            nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
-            erat, sed diam voluptua.
+            I am a passionate Software Engineer with an outstanding academic
+            background and a strong focus on continuous personal development. My
+            true passion lies in backend development, where I have extensive
+            expertise in various technologies, particularly specializing in C#
+            .NET. In addition, I have hands-on experience with Java, Python, and
+            Node.js, and I am adept at quickly adapting to different
+            technologies. Throughout my career, I have honed my skills in
+            project management and as a Product Owner, enhancing my abilities in
+            team leadership, communication, and strategic planning. My goal is
+            to advance my career as a Backend Developer and eventually take on
+            leadership and management roles within the field of software
+            development.
           </p>
         </section>
 
-        <section className="mb-12 p-8 shadow-md rounded-lg">
-          <h2 className="text-2xl font-semibold">Skills</h2>
-          <ul className="list-disc list-inside mt-4">
-            <li>
-              Javascript - Lorem ipsum dolor sit amet, consetetur sadipscing.
-            </li>
-            <li>Python - Lorem ipsum dolor sit amet, consetetur sadipscing.</li>
-            <li>C# - Lorem ipsum dolor sit amet, consetetur sadipscing.</li>
-            <li>Python - Lorem ipsum dolor sit amet, consetetur sadipscing.</li>
-            <li>Python - Lorem ipsum dolor sit amet, consetetur sadipscing.</li>
-            <li>Python - Lorem ipsum dolor sit amet, consetetur sadipscing.</li>
-          </ul>
-        </section>
-
-        <section className="mb-12 p-8 shadow-md rounded-lg">
+        <section className="flex flex-col justify-center items-center gap-2 lg:gap-4 w-full px-1/6 p-8 lg:px-1/4 shadow-md rounded-lg">
           <h2 className="text-2xl font-semibold">Contact</h2>
           <p className="mt-4">Follow me on:</p>
           <ul className="list-disc list-inside mt-4"></ul>
         </section>
       </main>
       <footer className="text-center mt-12 bg-cover bg-center p-4">
-        <p className="text-white">
-          &copy; 2024 SELIM GOKTUG CANKURTARAN. All rights reserved.
+        <p className="text-black">
+          &copy; 2024 SELİM GÖKTUĞ CANKURTARAN. All rights reserved.
         </p>
       </footer>
     </>
