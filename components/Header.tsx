@@ -61,6 +61,9 @@ export default function Header() {
           {!!mobile && (
             <div
               className={`lg:hidden absolute z-50 top-[80px] bg-white border left-0 w-full`}
+              onClick={() => {
+                setMobile(false);
+              }}
             >
               {navItems.map((navItem) => (
                 <NavList navItem={navItem} key={navItem.id} />

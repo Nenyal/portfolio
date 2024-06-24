@@ -7,11 +7,20 @@ datasource db {
   url      = env("DATABASE_URL")
 }
 
+type HeaderList {
+  link String
+  name String
+  show Boolean
+}
+
+type HeaderTitle {
+  link String
+  name String
+}
+
 model Header {
-  id String @id @default(auto()) @map("_id") @db.ObjectId
-  title String
-  description String
-  image String
-  createdAt DateTime @default(now())
-  updatedAt DateTime @updatedAt
+  id    String       @id @default(auto()) @map("_id") @db.ObjectId
+  id_   Int          @map("id")
+  list  HeaderList[]
+  title HeaderTitle
 }

@@ -5,7 +5,11 @@ export async function GET(req: NextRequest, res: NextResponse) {
   const navItems: NavItem[] = [
     {
       id: 1,
-      title: { name: "About", link: "/about" },
+      title: { name: "Specialities", link: "#specialities" },
+    },
+    {
+      id: 2,
+      title: { name: "About", link: "#about" },
       // list: [
       //   { show: true, name: "About Me", link: "/about" },
       //   { show: true, name: "Education", link: "/education" },
@@ -13,15 +17,15 @@ export async function GET(req: NextRequest, res: NextResponse) {
       // ],
     },
     {
-      id: 2,
-      title: { name: "Projects", link: "/projects" },
-    },
-    {
       id: 3,
-      title: { name: "Contact", link: "/contact" },
+      title: { name: "Projects", link: "#projects" },
     },
     {
       id: 4,
+      title: { name: "Contact", link: "#contact" },
+    },
+    {
+      id: 5,
       title: { name: "Curriculum Vitae", link: "/cv" },
     },
   ];

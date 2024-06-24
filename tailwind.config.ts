@@ -27,6 +27,7 @@ const config: Config = {
         },
         darkblue: {
           buttonbg: "#053C5F",
+          buttonhover: "#032840",
         },
       },
     },
