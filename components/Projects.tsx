@@ -2,7 +2,7 @@ export default function Projects() {
   return (
     <section
       id="projects"
-      className="flex flex-col justify-center items-center gap-2 lg:gap-4 w-full px-1/6 p-16 lg:px-1/4 shadow-md rounded-lg scroll-m-10"
+      className="flex flex-col justify-center items-center gap-2 lg:gap-4 w-full px-1/6 p-16 lg:px-1/4 shadow-sm rounded-lg scroll-m-10"
     >
       <h2 className="text-2xl font-semibold">Projects</h2>
       <div className="grid lg:grid-cols-3 grid-cols-1 lg:gap-[34px] gap-[16px] items-center hover mt-8 lg:mt-0">

@@ -1,6 +1,6 @@
 export default function About() {
   return (
-    <section id="about" className="flex flex-col justify-center items-center gap-2 lg:gap-4 w-full px-1/6 p-16 lg:px-1/4 shadow-md rounded-lg scroll-m-10">
+    <section id="about" className="flex flex-col justify-center items-center gap-2 lg:gap-4 w-full px-1/6 p-16 lg:px-1/4 shadow-sm rounded-lg scroll-m-10">
       <h2 className="text-2xl font-semibold">About</h2>
       <p className="mt-8">
         I am a passionate Software Engineer with an outstanding academic

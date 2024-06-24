@@ -7,7 +7,7 @@ import typescript from "@/assets/typescript.svg";
 
 export default function SpecialitiesGrid() {
   return (
-    <section id="specialities" className="flex flex-col lg:px-1/4 px-1/7 items-center w-full lg:gap-8 p-16 shadow-md rounded-lg scroll-m-10">
+    <section id="specialities" className="flex flex-col lg:px-1/4 px-1/7 items-center w-full lg:gap-8 p-16 shadow-sm rounded-lg scroll-m-10">
       <h2 className="text-2xl font-semibold">Specialities</h2>
       <div className="grid lg:grid-cols-3 grid-cols-1 lg:gap-[34px] gap-[16px] items-center hover mt-8 lg:mt-0">
         <div className="flex flex-col items-center text-center gap-2 lg:px-4 py-6 border-2 rounded-lg border-gray-50 transform transition duration-300 hover:scale-105">

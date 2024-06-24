@@ -24,3 +24,13 @@ model Header {
   list  HeaderList[]
   title HeaderTitle
 }
+
+model Projects {
+  id          String   @id @default(auto()) @map("_id") @db.ObjectId
+  title       String
+  subTitle    String
+  description String
+  imagePaths  String[]
+  url         String
+  github      String
+}

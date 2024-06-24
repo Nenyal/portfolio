@@ -36,7 +36,7 @@ export default function NavList({ navItem }: { navItem: NavItem }) {
     >
       <Link
         href={navItem.title.link}
-        className={`relative flex items-center gap-1 px-3 py-2 transition-all duration-300 ease-out group hover:shadow-sm ${
+        className={`relative flex items-center gap-1 px-3 py-2 transition-all duration-300 ease-out group hover:shadow-lg hover:bg-white ${
           navItem?.list ? "hover:bg-white hover:text-slate-900" : ""
         }`}
       >
