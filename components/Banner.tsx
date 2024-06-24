@@ -16,7 +16,7 @@ export default function Banner() {
         <h2 className="text-l lg:text-3xl font-semibold max text-cyan-600">
           a Software Engineer <br></br> of another kind
         </h2>
-        <p className="mt-4 lg:max-w-1/2 text-sm">
+        <p className="mt-4 lg:max-w-1/3 text-sm">
           I&apos;m a software engineer with a passion for building scalable and
           maintainable software. I have experience in building web applications,
           APIs, and microservices. I&apos;m also interested in cloud computing
