@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { Sen } from "next/font/google";
-import "./globals.css";
+import "../globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 
@@ -14,11 +14,13 @@ export const metadata: Metadata = {
 
 export default function RootLayout({
   children,
+  params: { locale },
 }: Readonly<{
   children: React.ReactNode;
+  params: { locale: string };
 }>) {
   return (
-    <html lang="en" className="h-full" style={{ scrollBehavior: "smooth" }}>
+    <html lang={locale} className="h-full" style={{ scrollBehavior: "smooth" }}>
       <body className={`${sen.className} h-full`}>
         <Header />
         <div className="min-h-full">{children}</div>

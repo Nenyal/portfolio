@@ -1,8 +1,10 @@
 import { Button } from "@tremor/react";
 import Link from "next/link";
 import bg from "@/assets/background.png";
+import { useTranslations } from "next-intl";
 
 export default function Banner() {
+  const t = useTranslations();
   return (
     <section
       className="bg-cover bg-center"
@@ -11,7 +13,7 @@ export default function Banner() {
       <div className="flex flex-col tablet:flex-row justify-center h-screen gap-2 lg:gap-4 w-full p-1/6 pt-36 lg:p-1/4">
         <h2 className="text-xl lg:text-3xl font-semibold ">Hello, I&apos;m</h2>
         <h1 className="text-3xl lg:text-5xl font-bold">
-          Selim Göktuğ Cankurtaran
+          Selim Göktuğ Cankurtaran ${t(`Index.title`)}
         </h1>
         <h2 className="text-l lg:text-3xl font-semibold max text-cyan-600">
           a Software Engineer <br></br> of another kind

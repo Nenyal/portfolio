@@ -5,26 +5,32 @@ import Link from "next/link";
 import logo from "@/assets/logo.svg";
 import NavList from "./NavList";
 import { NavItem } from "@/interfaces/nav.interface";
-import { useEffect, useState } from "react";
+import { useCallback, useEffect, useState } from "react";
 
 export default function Header() {
   const [navItems, setNavItems] = useState<NavItem[]>([]);
   const [mobile, setMobile] = useState(false);
 
-  useEffect(() => {
-    const fetchData = async () => {
-      const res: NavItem[] = await fetch(`api/v1/header`)
-        .then((res) => res.json())
-        .then((data) => data.navItems);
-      setNavItems(res);
-    };
-  
-    fetchData();
+  const fetchNavItems = useCallback(async () => {
+    try {
+      const response = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/header`);
+      if (!response.ok) {
+        throw new Error("Failed to fetch nav items");
+      }
+      const data = await response.json();
+      setNavItems(data.navItems);
+    } catch (error) {
+      console.error("Error fetching nav items:", error);
+    }
   }, []);
+
+  useEffect(() => {
+    fetchNavItems();
+  }, [fetchNavItems]);
 
   return (
     <div className="z-40 top-0 flex flex-col w-full h-max">
-      <header className="z-40 flex flex-col h-max items-center w-full fixed top-0 bg-white shadow-sm"> {/*'border-b border-s-fuchsia-50'*/}
+      <header className="z-40 flex flex-col h-max items-center w-full fixed top-0 bg-white shadow-sm">
         <div className={`top-0 flex items-center justify-between w-full`}>
           <Link href="/" className={`flex my-6 ml-5 lg:ml-1/6`}>
             <Image src={logo} className="w-72" alt="logo" priority />
