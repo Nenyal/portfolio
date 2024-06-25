@@ -1,5 +1,11 @@
 {
-    "Index": {
-        "title": "Hallo Welt!"
+    "Banner": {
+      "upperText": "Hallo, ich bin",
+      "title": "ein Software-Ingenieur",
+      "lowerTitle": "einer anderen Art",
+      "description": "Ich bin ein Software-Ingenieur mit Leidenschaft für die Entwicklung skalierbarer und wartbarer Software. Ich habe Erfahrung in der Entwicklung von Webanwendungen, APIs und Microservices. Außerdem interessiere ich mich für Cloud Computing und DevOps-Praktiken. Ich bin immer auf der Suche nach neuen Herausforderungen und Gelegenheiten, um dazuzulernen und mich weiterzuentwickeln.",
+      "contact": "jetzt Einstellen!",
+      "more": "über mich"
     }
-}
+  }
+  

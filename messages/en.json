@@ -1,5 +1,10 @@
 {
-  "Index": {
-    "title": "Hello world!"
+  "Banner": {
+    "upperText": "Hello, I'm",
+    "title": "a Software Engineer",
+    "lowerTitle": "of another kind",
+    "description": "I'm a software engineer with a passion for building scalable and maintainable software. I have experience in building web applications, APIs, and microservices. I'm also interested in cloud computing and DevOps practices. I'm always looking for new challenges and opportunities to learn and grow.",
+    "contact": "hire me!",
+    "more": "learn more"
   }
 }

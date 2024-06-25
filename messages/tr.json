@@ -1,5 +1,10 @@
 {
-  "Index": {
-    "title": "Merhaba Dünya!"
+  "Banner": {
+    "upperText": "Merhaba, ben",
+    "title": "fark yaratan bir",
+    "lowerTitle": "Bilgisayar Mühendisiyim",
+    "description": "Skalalanabilir ve sürdürülebilir yazılımlar geliştirmeye tutkulu bir bilgisayar mühendisiyim. Web uygulamaları, API'lar ve mikro servisler oluşturma konusunda deneyimim var. Ayrıca bulut bilişim ve DevOps uygulamalarına ilgi duyuyorum. Her zaman yeni zorluklarla karşılaşmaya ve öğrenmeye açığım.",
+    "contact": "Beni işe alın!",
+    "more": "Daha fazlasını öğren"
   }
 }
