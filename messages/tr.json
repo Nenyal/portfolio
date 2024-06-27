@@ -7,20 +7,43 @@
     "contact": "Beni işe alın!",
     "more": "Daha fazlasını öğren"
   },
+
   "Contact": {
     "title": "İletişim",
     "follow": "Beni takip edin:",
     "email": "veya bana e-posta gönderin:"
   },
+
   "About": {
     "title": "Hakkımda",
     "description": "Olağanüstü akademik geçmişe sahip ve sürekli kişisel gelişime odaklanan tutkulu bir Yazılım Mühendisiyim. Gerçek tutkum, özellikle C# .NET konusunda uzmanlaşmış birçok teknolojide geniş deneyime sahip olduğum backend geliştirme alanında yatmaktadır. Ayrıca Java, Python ve Node.js gibi teknolojilerle pratik deneyime sahibim ve farklı teknolojilere hızlı bir şekilde uyum sağlayabilirim. Kariyerim boyunca, proje yönetimi ve Ürün Sahibi olarak becerilerimi geliştirdim, takım liderliği, iletişim ve stratejik planlama becerilerimi artırdım. Amacım, kariyerimi Backend Geliştirici olarak ilerletmek ve sonunda yazılım geliştirme alanında liderlik ve yönetim rollerini üstlenmektir."
   },
+
   "Header": {
     "specialities": "Uzmanlık Alanları",
     "projects": "Projeler",
     "contact": "İletişim",
     "about": "Hakkımda",
     "resume": "Özgeçmiş"
+  },
+
+  "Specialities": {
+    "title": "Uzmanlıklar",
+    
+    "csharp": {
+      "description": "ASP.NET Core ve Entity Framework Core ile web uygulamaları, API'ler ve mikro hizmetler geliştirme."
+    },
+    "typescript": {
+      "description": "Next.js ve Node.js kullanarak web uygulamaları geliştirme, CI/CD ve dağıtım."
+    },
+    "javascript": {
+      "description": "Next.js ve Node.js kullanarak web uygulamaları geliştirme, CI/CD ve dağıtım."
+    },
+    "python": {
+      "description": "Yapay zeka, makine öğrenimi ve veri analizi."
+    },
+    "java": {
+      "description": "Java programlama dili ve Spring Boot çerçevesi hakkında temel bilgi."
+    }
   }
 }

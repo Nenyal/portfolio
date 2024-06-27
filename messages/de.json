@@ -7,20 +7,43 @@
     "contact": "jetzt Einstellen!",
     "more": "über mich"
   },
+
   "Contact": {
     "title": "Kontakt",
     "follow": "Folge mir auf:",
     "email": "oder sende mir eine E-Mail:"
   },
+
   "About": {
     "title": "Über mich",
     "description": "Ich bin ein leidenschaftlicher Software-Ingenieur mit herausragendem akademischem Hintergrund und einem starken Fokus auf kontinuierliche persönliche Entwicklung. Meine wahre Leidenschaft liegt in der Backend-Entwicklung, wo ich umfangreiche Expertise in verschiedenen Technologien habe, insbesondere in C# .NET. Darüber hinaus habe ich praktische Erfahrung mit Java, Python und Node.js und bin in der Lage, mich schnell an verschiedene Technologien anzupassen. Im Laufe meiner Karriere habe ich meine Fähigkeiten im Projektmanagement und als Product Owner geschärft und meine Fähigkeiten in Teamführung, Kommunikation und strategischer Planung verbessert. Mein Ziel ist es, meine Karriere als Backend-Entwickler voranzutreiben und schließlich Führungs- und Managementaufgaben im Bereich der Softwareentwicklung zu übernehmen."
   },
+
   "Header": {
     "specialities": "Spezialitäten",
     "projects": "Projekte",
     "contact": "Kontakt",
     "about": "Über mich",
     "resume": "Lebenslauf"
+  },
+
+  "Specialities": {
+    "title": "Spezialitäten",
+    
+    "csharp": {
+      "description": "Entwicklung von Webanwendungen, APIs und Microservices mit ASP.NET Core und Entity Framework Core."
+    },
+    "typescript": {
+      "description": "Entwicklung, CI/CD und Bereitstellung von Webanwendungen mit Next.js und Node.js."
+    },
+    "javascript": {
+      "description": "Entwicklung, CI/CD und Bereitstellung von Webanwendungen mit Next.js und Node.js."
+    },
+    "python": {
+      "description": "Künstliche Intelligenz, maschinelles Lernen und Datenanalyse."
+    },
+    "java": {
+      "description": "Grundkenntnisse der Java-Programmiersprache und des Spring Boot-Frameworks."
+    }
   }
 }

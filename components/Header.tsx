@@ -7,26 +7,12 @@ import NavList from "./NavList";
 import { NavItem } from "@/interfaces/nav.interface";
 import { useCallback, useEffect, useState } from "react";
 
-export default function Header() {
-  const [navItems, setNavItems] = useState<NavItem[]>([]);
+interface HeaderProps {
+  navItems: NavItem[];
+}
+
+export default function Header({ navItems }: HeaderProps) {
   const [mobile, setMobile] = useState(false);
-
-  const fetchNavItems = useCallback(async () => {
-    try {
-      const response = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/header`);
-      if (!response.ok) {
-        throw new Error("Failed to fetch nav items");
-      }
-      const data = await response.json();
-      setNavItems(data.navItems);
-    } catch (error) {
-      console.error("Error fetching nav items:", error);
-    }
-  }, []);
-
-  useEffect(() => {
-    fetchNavItems();
-  }, [fetchNavItems]);
 
   return (
     <div className="z-40 top-0 flex flex-col w-full h-max">
