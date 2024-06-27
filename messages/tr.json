@@ -6,5 +6,21 @@
     "description": "Skalalanabilir ve sürdürülebilir yazılımlar geliştirmeye tutkulu bir bilgisayar mühendisiyim. Web uygulamaları, API'lar ve mikro servisler oluşturma konusunda deneyimim var. Ayrıca bulut bilişim ve DevOps uygulamalarına ilgi duyuyorum. Her zaman yeni zorluklarla karşılaşmaya ve öğrenmeye açığım.",
     "contact": "Beni işe alın!",
     "more": "Daha fazlasını öğren"
+  },
+  "Contact": {
+    "title": "İletişim",
+    "follow": "Beni takip edin:",
+    "email": "veya bana e-posta gönderin:"
+  },
+  "About": {
+    "title": "Hakkımda",
+    "description": "Olağanüstü akademik geçmişe sahip ve sürekli kişisel gelişime odaklanan tutkulu bir Yazılım Mühendisiyim. Gerçek tutkum, özellikle C# .NET konusunda uzmanlaşmış birçok teknolojide geniş deneyime sahip olduğum backend geliştirme alanında yatmaktadır. Ayrıca Java, Python ve Node.js gibi teknolojilerle pratik deneyime sahibim ve farklı teknolojilere hızlı bir şekilde uyum sağlayabilirim. Kariyerim boyunca, proje yönetimi ve Ürün Sahibi olarak becerilerimi geliştirdim, takım liderliği, iletişim ve stratejik planlama becerilerimi artırdım. Amacım, kariyerimi Backend Geliştirici olarak ilerletmek ve sonunda yazılım geliştirme alanında liderlik ve yönetim rollerini üstlenmektir."
+  },
+  "Header": {
+    "specialities": "Uzmanlık Alanları",
+    "projects": "Projeler",
+    "contact": "İletişim",
+    "about": "Hakkımda",
+    "resume": "Özgeçmiş"
   }
 }
