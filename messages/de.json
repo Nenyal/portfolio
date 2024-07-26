@@ -29,7 +29,7 @@
 
   "Specialities": {
     "title": "Spezialitäten",
-    
+
     "csharp": {
       "description": "Entwicklung von Webanwendungen, APIs und Microservices mit ASP.NET Core und Entity Framework Core."
     },
@@ -44,6 +44,18 @@
     },
     "java": {
       "description": "Grundkenntnisse der Java-Programmiersprache und des Spring Boot-Frameworks."
+    }
+  },
+
+  "Projects": {
+    "done": {
+      "title": "Flottenmanagementsystem",
+      "description": "Ein umfassendes Flottenverfolgungssystem zur Verwaltung und gemeinsamen Nutzung von Firmenfahrzeugen mit .NET 8. TCP- und MQTT-Protokolle wurden für die Integration mit IoT-Geräten verwendet."
+    },
+
+    "solar": {
+      "title": "Analyse aktiver Regionen auf der Sonne",
+      "description": "Analyse des Auftretens aktiver Regionen auf der Sonne mit Fokus auf räumliche und zeitliche Nesting-Tendenzen, unter Verwendung von Sonnenbildern."
     }
   }
 }

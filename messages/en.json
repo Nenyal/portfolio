@@ -45,5 +45,17 @@
     "java": {
       "description": "Basic knowledge of Java programming language and Spring Boot framework."
     }
+  },
+
+  "Projects": {
+    "done": {
+      "title": "Fleet Management System",
+      "description": "A comprehensive fleet tracking system for managing and sharing company vehicles using .NET 8. TCP and MQTT protocols were used for integration with IoT devices."
+    },
+
+    "solar": {
+      "title": "Analysis of Active Regions on the Sun",
+      "description": "Analyzing the occurrence of active regions on the Sun with a focus on spatial and temporal nesting tendencies using solar images."
+    }
   }
 }

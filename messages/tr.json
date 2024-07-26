@@ -29,7 +29,6 @@
 
   "Specialities": {
     "title": "Uzmanlıklar",
-    
     "csharp": {
       "description": "ASP.NET Core ve Entity Framework Core ile web uygulamaları, API'ler ve mikro hizmetler geliştirme."
     },
@@ -44,6 +43,17 @@
     },
     "java": {
       "description": "Java programlama dili ve Spring Boot çerçevesi hakkında temel bilgi."
+    }
+  },
+
+  "Projects": {
+    "done": {
+      "title": "Filo Yönetim Sistemi",
+      "description": ".NET 8 ile şirket araçlarının yönetimi ve paylaşımı için geniş çaplı bir filo takip sistemi. IoT ürünleriyle entegrasyon sağlamak için TCP ve MQTT protokolleri kullanıldı."
+    },
+    "solar": {
+      "title": "Güneş'teki Aktif Bölgelerin Analizi",
+      "description": "Güneş'teki aktif bölgelerin mekansal ve zamansal yuvalanma eğilimlerine odaklanarak güneş görüntüleri kullanarak analiz edilmesi."
     }
   }
 }
